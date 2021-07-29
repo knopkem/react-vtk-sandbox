@@ -21,7 +21,7 @@ export default function Picking(props) {
     tooltip.current.innerHTML = txt;
   };
   return (
-    <div style={{width: '100vw', height: '100vh'}}>
+    <div style={{width: '100vw', height: '100vh', position: 'relative'}}>
       <pre style={{ position: 'absolute', top: '10px', left: '10px', zIndex: 1, margin: 0 }} ref={tooltip} />
       <View
         pickingModes={['hover', 'click', 'select']}

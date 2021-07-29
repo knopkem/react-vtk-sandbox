@@ -23,7 +23,7 @@ export default function CubeAxes(props) {
   const toggleCloud = () => setCloudAxes(!cloudAxes);
   const buttonStyle = { position: 'absolute', left: '5px', top: '5px', zIndex: 1 };
   return (
-    <div style={{width: '100vw', height: '100vh'}}>
+    <div style={{width: '100vw', height: '100vh', position: 'relative'}}>
       <button style={buttonStyle} onClick={togglePlan}>Toggle Cube 1</button>
       <button style={{ ...buttonStyle, top: '30px' }} onClick={toggleCloud}>Toggle Cube 2</button>
       <View>

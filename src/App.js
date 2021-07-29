@@ -7,6 +7,7 @@ import CutterExample from './Examples/CutterExample';
 import Picking from './Examples/Picking';
 import PointCloud from './Examples/PointCloud';
 import PolyDataViewer from './Examples/PolyDataViewer';
+import RawVtk from './Examples/RawVtk';
 
 export default function App() {
     return (
@@ -34,6 +35,9 @@ export default function App() {
                     <li>
                         <Link to="/polydata">PolyDataViewer</Link>
                     </li>
+                    <li>
+                        <Link to="/raw">Raw VTK.js</Link>
+                    </li>
                 </ul>
             </div>
 
@@ -45,6 +49,7 @@ export default function App() {
                 <Route exact path="/picking" component={Picking} />
                 <Route exact path="/cloud" component={PointCloud} />
                 <Route exact path="/polydata" component={PolyDataViewer} />
+                <Route exact path="/raw" component={RawVtk} />
             </Switch>
         </Router>
     );
